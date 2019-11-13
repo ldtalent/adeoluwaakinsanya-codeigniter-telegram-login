@@ -10,7 +10,7 @@ class Auth extends CI_Controller
     }
 
     /**
-     * Telegram webhook method.
+     * Authentication view
      */
     public function index($param="")
     {
@@ -32,6 +32,9 @@ class Auth extends CI_Controller
        
     }
 
+    /**
+     * verify authentication requests
+     */
     public function verify($data)
     {
         $check_hash = $data['hash'];
