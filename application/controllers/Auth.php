@@ -37,6 +37,7 @@ class Auth extends CI_Controller
      */
     public function verify($data)
     {
+        $token = getenv('TELEGRAM_TOKEN');
         $check_hash = $data['hash'];
         unset($data['hash']);
         $data_check_arr = [];
@@ -45,7 +46,7 @@ class Auth extends CI_Controller
         }
         sort($data_check_arr);
         $data_check_string = implode("\n", $data_check_arr);
-        $secret_key = hash('sha256', "919284763:AAGN88fNKKJ293CEP45AQj2EnuLWgH2Je1E", true);
+        $secret_key = hash('sha256', $token, true);
         $hash = hash_hmac('sha256', $data_check_string, $secret_key);
         if (strcmp($hash, $check_hash) !== 0) {
             unset($data);
