@@ -23,7 +23,7 @@ export TELEGRAM_ACCESS_TOKEN=YOUR-ACCESS-TOKEN
 Clone the project from GitHub by running:
 
 ```bash
-git clone https://github.com/cooleraid/codeigniter-telegram-login.git
+git clone https://github.com/learningdollars/adeoluwaakinsanya-codeigniter-telegram-login.git
 ```
 
 Navigate to the project directory in your terminal and start your PHP local web server
@@ -41,4 +41,4 @@ ngrok http 8000
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
-[MIT](https://github.com/cooleraid/codeigniter-telegram-login/blob/master/LICENSE)
+[MIT](https://github.com/learningdollars/adeoluwaakinsanya-codeigniter-telegram-login/blob/master/LICENSE)
